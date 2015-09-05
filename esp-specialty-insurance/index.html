@@ -1,0 +1,44 @@
+---
+layout: default
+title: ESP Specialty Insurance | Portfolio | Mac Fullerton
+---
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="owl-demo">
+				<div class="item"><a href="/images/esp_large.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Logo Detail"><img src="/images/esp_large.jpg" class="img-responsive" alt="ESP Logo"></a></div>
+				<div class="item"><a href="/images/esp_web2.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Logo on Website"><img src="/images/esp_web2.jpg" class="img-responsive" alt="ESP Website 1"></a></div>
+				<div class="item"><a href="/images/esp_web1.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Logo on"><img src="/images/esp_web1.jpg" class="img-responsive" alt="ESP Website 2"></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h1 class="blurb_name">ESP Specialty Insurance Logo <br><small>Graphic Design, Logo Design</small></h1>
+			<p class="blurb_text">This logo was designed for a Specialty Insurance company located in Leicester, Massachusetts. The company was just getting started and looking for a logo to demonstrate their identity. The client was looking for a simplistic but strong logo. I worked on demonstrating the idea of vision and senses into the logo as well as weather. The client also wanted the ESP acronym, Entertainment, Sports, Production, to be part of the logo which I included off to the side of the main logo. I felt that the blue color and circular badge provided a sense of strength and power. The small accent lines inside the circle were added as a symbol of weather/wind. The logo is displayed on the ESP website which was designed by Nathan Fullerton whose work is viewable here: <a href="http://www.natefullerton.com/#web">www.natefullerton.com</a></p>
+			<h4>2014</h4>
+		</div>
+	</div>
+</div>
+<script src="/js/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#owl-demo").owlCarousel({
+			autoPlay : false,
+			stopOnHover : true,
+			navigation:false,
+			paginationSpeed : 1000,
+			goToFirstSpeed : 3000,
+			singleItem : true,
+			autoHeight : true,
+			transitionStyle:"fade"
+		});
+	});
+</script>
+<script src="/js/lightbox-master/ekko-lightbox.min.js"></script>
+<script type="text/javascript">
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+	}); 
+</script>

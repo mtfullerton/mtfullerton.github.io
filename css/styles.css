@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+body {
+	font-family: 'Montserrat Alternates', sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+h1, h2, h3, h4, h5, h6,  {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+a {
+	font-family: 'Marcellus SC', serif;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* CSS3 Filter Effects */
+
+/* Blur Filter Effect */
+.blur {	
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+	line-height:1em;
+	-webkit-filter: blur(1px);
+}
+
+
+/* Brightness Filter Effect */
+.brightness {	
+	-webkit-filter: brightness(-20%);
+}
+
+
+/* Contrast Filter Effect */
+.contrast {	
+	-webkit-filter: contrast(30%);
+}
+
+/* Drop Shadow Filter Effect */
+.dropshadow {
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+/* Grayscale Filter Effect */
+.grayscale {
+	-webkit-filter: grayscale(50%);
+}
+
+/* Hue Rotation Filter Effect */
+.huerotation {
+	-webkit-filter: hue-rotate(180deg);
+}
+
+/* Invert Filter Effect */
+.invert {
+-webkit-filter: invert(100%);
+}
+
+/* Opacity Filter Effect */
+.opacity {
+	-webkit-filter: opacity(50%);
+}
+
+/* Saturate Filter Effect */
+.saturate {
+	-webkit-filter: saturate(250%);
+}
+
+/* Sepia Filter Effect */
+.sepia {
+	-webkit-filter: sepia(100%);
+}
+
+/* Combined Filter Effects - Black and White */
+.blackwhite {
+	  -webkit-filter: grayscale(100%) brightness(10%) contrast(100%);
+}
