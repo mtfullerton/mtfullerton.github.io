@@ -9,25 +9,23 @@ title: Plymouth State University Music, Theatre and Dance Department | Portfolio
 		</div>
 		<div class="col-xs-12 col-sm-6">
 			<div class="row">
-				<div class="col-md-12 col-lg-6">
+				<div class="col-xs-12 col-lg-6">
 					<div class="tall-item"><a href="/images/mtdtrifoldbrochure.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Trifold Brochure Outside"> <img src="/images/mtdtrifoldbrochure.jpg" class="img-responsive" alt="mtdbrochure"></a></div>
 				</div>
-				<div class="col-md-12 col-lg-6">
+				<div class="col-xs-12 col-lg-6">
 					<div class="tall-item"><a href="/images/mtdtrifoldbrochure2.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Trifold Brochure Inside"> <img src="/images/mtdtrifoldbrochure2.jpg" class="img-responsive" alt="mtdbrochure2"></a></div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<h1 class="blurb_name">Plymouth State University Music, Theatre, and Dance Department Recruitment Resources <br><small>Graphic Design, Resource Design</small></h1>
-					<p class="blurb_text">This series of recruitment resources for created for the Plymouth State University Music, Theatre, and Dance Department. For the main poster the client wanted to push the idea of Plymouth State’s location in the White Mountains of NH. I put the main centerpiece images into triangles to for the mountain theme. My original brochure idea </p>
-					<h4>2014</h4>
-				</div>
-			</div>
+		</div>
+		<div class="col-sm-12 col-lg-6">
+			<h1 class="blurb_name">Plymouth State University Music, Theatre, and Dance Department Recruitment Resources <br><small>Graphic Design, Resource Design</small></h1>
+			<p class="blurb_text">This series of recruitment resources for created for the Plymouth State University Music, Theatre, and Dance Department. For the main poster the client wanted to push the idea of Plymouth State’s location in the White Mountains of NH. I put the main centerpiece images into triangles to for the mountain theme. My original brochure idea </p>
+			<h4>2014</h4>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-xs-12">
-			<div id="owl-demo">
+			<div  class="owl-carousel owl-theme">
 				<div class="item"><a href="/images/mtdtrianglebrochure.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Triangle Brochure Outside"><img src="/images/mtdtrianglebrochure.jpg" class="img-responsive" alt="Triangle Brochure Outside"></a></div>
 				<div class="item"><a href="/images/mtdtrianglebrochure2.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Triangle Brochure Inside"><img src="/images/mtdtrianglebrochure2.jpg" class="img-responsive" alt="Triangle Brochure Inside"></a></div>
 				<div class="item"><a href="/images/mtdhorizontalbookmark.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Dance Horizontal Bookmark"><img src="/images/mtdhorizontalbookmark2.jpg" class="img-responsive" alt="Dance Horizontal Bookmark"></a></div>
@@ -41,11 +39,24 @@ title: Plymouth State University Music, Theatre and Dance Department | Portfolio
 <script src="/js/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript">
 	$(function() {
-		$("#owl-demo").owlCarousel({
-			autoPlay: 6000, //Set AutoPlay to 3 seconds
-			items : 3,
-			itemsDesktop : [1199,3],
-			itemsDesktopSmall : [979,3]
+		$('.owl-carousel').owlCarousel({
+			items:3,
+			margin:10,
+			autoHeight:true,
+			dots:true,
+			loop:true,
+			responsiveClass:true,
+			responsive:{
+				0:{
+						items:1,
+				},
+				600:{
+						items:2,
+				},
+				1000:{
+						items:3,
+				}
+				}
 		});
 	});
 </script>

@@ -5,7 +5,7 @@ title: ESP Specialty Insurance | Portfolio | Mac Fullerton
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">
-			<div id="owl-demo">
+			<div class="owl-carousel owl-theme">
 				<div class="item"><a href="/images/esp_large.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Logo Detail"><img src="/images/esp_large.jpg" class="img-responsive" alt="ESP Logo"></a></div>
 				<div class="item"><a href="/images/esp_web2.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Logo on Website"><img src="/images/esp_web2.jpg" class="img-responsive" alt="ESP Website 1"></a></div>
 				<div class="item"><a href="/images/esp_web1.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Logo on"><img src="/images/esp_web1.jpg" class="img-responsive" alt="ESP Website 2"></a></div>
@@ -23,16 +23,13 @@ title: ESP Specialty Insurance | Portfolio | Mac Fullerton
 <script src="/js/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript">
 	$(function() {
-		$("#owl-demo").owlCarousel({
-			autoPlay : false,
-			stopOnHover : true,
-			navigation:false,
-			paginationSpeed : 1000,
-			goToFirstSpeed : 3000,
-			singleItem : true,
-			autoHeight : true,
-			transitionStyle:"fade"
-		});
+	$('.owl-carousel').owlCarousel({
+		items:1,
+		margin:10,
+		autoHeight:true,
+		dots:true,
+		loop:true
+});
 	});
 </script>
 <script src="/js/lightbox-master/ekko-lightbox.min.js"></script>

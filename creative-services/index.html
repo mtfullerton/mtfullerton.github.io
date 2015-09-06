@@ -5,7 +5,7 @@ title: Plymouth State University Marketing, Communication &amp; Creative Service
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6">
-			<div class="owl-demo">
+			<div class="owl-carousel owl-theme">
 				<div class="item"><a href="/images/sidorep1.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Sidore Poster 1"><img src="/images/sidorep1.jpg" class="img-responsive" alt="Sidore Poster 1"></a></div>
 
 				<div class="item"><a href="/images/sidorep3.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Sidore Poster 2"><img src="/images/sidorep3.jpg" class="img-responsive" alt="Sidore Poster 2"></a></div>
@@ -34,7 +34,7 @@ title: Plymouth State University Marketing, Communication &amp; Creative Service
 	<hr>
 	<div class="row">
 		<div class="col-xs-12 col-sm-6">
-			<div class="owl-demo">
+			<div class="owl-carousel owl-theme">
 				<div class="item"><a href="/images/connections1front.jpg" data-toggle="lightbox" data-gallery="gallery_2" data-title="Invitiation Front"><img src="/images/connections1front.jpg" class="img-responsive" alt="Invitiation Front"></a></div>
 				<div class="item"><a href="/images/connections1back.jpg" data-toggle="lightbox" data-gallery="gallery_2" data-title="Invitiation Back"><img src="/images/connections1back.jpg" class="img-responsive" alt="Invitiation Back"></a></div>
 				<div class="item"><a href="/images/connections2front.jpg" data-toggle="lightbox" data-gallery="gallery_2" data-title="RSVP Front"><img src="/images/connections2front.jpg" class="img-responsive" alt="RSVP Front"></a></div>
@@ -51,15 +51,12 @@ title: Plymouth State University Marketing, Communication &amp; Creative Service
 <script src="/js/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript">
 	$(function() {
-		$(".owl-demo").owlCarousel({
-			autoPlay : false,
-			stopOnHover : true,
-			navigation:false,
-			paginationSpeed : 1000,
-			goToFirstSpeed : 3000,
-			singleItem : true,
-			autoHeight : true,
-			transitionStyle:"fade"
+		$('.owl-carousel').owlCarousel({
+			items:1,
+			margin:10,
+			autoHeight:true,
+			dots:true,
+			loop:true
 		});
 	});
 </script>
