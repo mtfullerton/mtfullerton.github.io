@@ -54,6 +54,9 @@ title: Plymouth State University Marketing, Communication &amp; Creative Service
 			margin:10,
 			dots:true,
 			loop:true,
+			onInitialized: function() {
+				$('.owl-carousel .cloned a').removeAttr('data-gallery').removeAttr('data-toggle').removeAttr('data-title');
+			}
 		});
 	});
 </script>

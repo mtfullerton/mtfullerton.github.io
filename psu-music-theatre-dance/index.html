@@ -56,7 +56,10 @@ title: Plymouth State University Music, Theatre and Dance Department | Portfolio
 						items:3,
 						loop:false
 				}
-				}
+			},
+			onInitialized: function() {
+				$('.owl-carousel .cloned a').removeAttr('data-gallery').removeAttr('data-toggle').removeAttr('data-title');
+			}
 		});
 	});
 </script>
