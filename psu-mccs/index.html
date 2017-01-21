@@ -1,0 +1,76 @@
+---
+layout: default
+title: Plymouth State University MCCS | Portfolio | Mac Fullerton
+---
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 center-block">
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="tab" href="#infosheets" role="tab">Infosheets</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#springpostcard" role="tab">Alumni Spring Postcard</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" role="tabpanel" id="infosheets">
+					<div class="row">
+						<div class="col-sm-12 col-lg-6">
+							<h1 class="blurb-name">Infosheets <br><small>2016 | Graphic Design, Resource Design</small></h1>
+							<p class="blurb-text">These infosheets were designed for department heads to create their own infosheets for their majors and minors. There are versions for both Undergraduate and Graduate courses with two versions for Graduate, two sided and one sided, depending on how much information was avaliable. After completion they had to be set up into versions accesible for proffesors unfamilair with Adobe programs. I also had to create Microsoft Word versions that could be used by proffesors who didn't have Adobe programs. </p>
+							<a class="back-btn" href="/index.html">< Back</a>
+						</div>
+						<div class="col-sm-12 col-lg-6">
+							<a href="/images/infoungrad1.jpg" data-toggle="lightbox" data-gallery="infosheets" data-footer="Undergradgrad Infosheet Front">
+							<img src="/images/infoungrad1.jpg" class="img-fluid"></a><hr>
+							<a href="/images/infoungrad2.jpg" data-toggle="lightbox" data-gallery="infosheets" data-footer="Undergradgrad Infosheet Back">
+							<img src="/images/infoungrad2.jpg" class="img-fluid"></a><hr>
+							<a href="/images/infograd1.jpg" data-toggle="lightbox" data-gallery="infosheets" data-footer="Graduate Infosheet 1 Sided">
+							<img src="/images/infograd1.jpg" class="img-fluid"></a><hr>
+							<a href="/images/infograd2.jpg" data-toggle="lightbox" data-gallery="infosheets" data-footer="Graduate Infosheet Front">
+							<img src="/images/infograd2.jpg" class="img-fluid"></a><hr>
+							<a href="/images/infograd3.jpg" data-toggle="lightbox" data-gallery="infosheets" data-footer="Graduate Infosheet Back">
+							<img src="/images/infograd3.jpg" class="img-fluid"></a>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" role="tabpanel" id="springpostcard">
+					<div class="row">
+						<div class="col-sm-12 col-lg-6">
+							<h1 class="blurb-name">PSU Alumni Spring Postcard <br><small>2016 | Graphic Design, Postcard Design</small></h1>
+							<p class="blurb-text">This postcard was for PSU Alumni and detailed upcoming special events where alumni could meet up. The front hightlighed some specific events while the back of the postcard listed the complete Spring calendar. I used green and yellow to produce a design that would standout in a pile of mail.
+							<a class="back-btn" href="/index.html">< Back</a>
+							</p>
+						</div>
+						<div class="col-sm-12 col-lg-6">
+							<a href="/images/alumnispringpostcard.jpg" data-toggle="lightbox" data-gallery="familypostcard" data-footer="Alumni Spring Postcard">
+							<img src="/images/alumnispringpostcard.jpg" class="img-fluid"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/js/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.owl-carousel').owlCarousel({
+			items:1,
+			margin:10,
+			dots:true,
+			loop:true,
+			onInitialized: function() {
+				$('.owl-carousel .cloned a').removeAttr('data-gallery').removeAttr('data-toggle').removeAttr('data-title');
+			}
+		});
+	});
+</script>
+<script src="/js/lightbox-master/ekko-lightbox.min.js"></script>
+<script type="text/javascript">
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+			event.preventDefault();
+			$(this).ekkoLightbox();
+	});
+</script>
