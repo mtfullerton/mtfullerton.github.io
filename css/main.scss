@@ -2,7 +2,7 @@
 ---
 
 // fonts
-@import "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900";
+@import "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800,900";
 
 $enable-flex: true;
 
@@ -72,6 +72,10 @@ $gray:      #7f8c8d;
   padding-bottom: 1rem;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 // navbar
 .navbar {
   font-family: $font-family-nunito;
@@ -85,7 +89,7 @@ $gray:      #7f8c8d;
   .navbar-brand {
     color: #16a085;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: .05rem;
     line-height: 1.2;
     text-transform: uppercase;
@@ -173,7 +177,7 @@ $gray:      #7f8c8d;
 
 .title-block {
     color: $green;
-    font-weight: 700;
+    font-weight: 800;
     padding-left: 2rem;
     margin-top: 1rem;
   @include media-breakpoint-up(sm) {
@@ -188,7 +192,7 @@ $gray:      #7f8c8d;
     right: -100%;
     width: 100%;
     text-align: right;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.25rem;
     letter-spacing: .05rem;
     text-transform: uppercase;
