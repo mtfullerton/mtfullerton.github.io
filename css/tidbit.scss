@@ -213,9 +213,12 @@ footer {
 .text_overlay {
   font-family: $font-family-tidbit;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    @include media-breakpoint-up(sm) {
+    font-size: 3rem;
+  }
 }
 
 a.smalllink {
@@ -262,7 +265,7 @@ p {
 }
 
 .company_banner {
-  background-image: url("/images/tidbit/banner_company.jpg");
+  background-image: url("/images/tidbit/company_banner.jpg");
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -271,8 +274,11 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 200px;
   padding: 40px;
+      @include media-breakpoint-up(md) {
+      height: 400px;
+  }
 }
 
 
@@ -376,12 +382,16 @@ h1 {
     text-transform: uppercase;
   }
   .mission_text {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     font-family: $font-family-tidbit;
     color: $tidbitbrown;
     text-align: center;
     font-weight: 800;
+      @include media-breakpoint-up(sm) {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
 }
 
