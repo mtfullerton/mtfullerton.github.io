@@ -65,7 +65,47 @@ $tidbitbrown:     #493728;
 
 
 // MAC FULLERTON STYLES
-
+body {
+  &.show-breakpoints {
+    // Breakpoint indicators for display
+    &::after {
+      background: $brand-primary;
+      color: #fff;
+      content: "XS";
+      font-family: monospace;
+      font-size: 1rem;
+      line-height: 1;
+      font-weight: 700;
+      padding: .4rem;
+      position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      z-index: 100000;
+    }
+    @include media-breakpoint-up(sm) {
+      &::after {
+        content: "sm";
+      }
+    }
+    @include media-breakpoint-up(md) {
+      &::after {
+        content: "md";
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      &::after {
+        content: "lg";
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      &::after {
+        content: "xl";
+      }
+    }
+  }
+}
 
 // main
 .main {
