@@ -1,0 +1,29 @@
+<div class="navbar">
+  <div class="navbar-title"><a href="/index.html">Mac Fullerton
+    <div class="navbar-subtitle">Graphic and Digital Designer</a></div>
+  </div>
+    <button class="nav-menu">Menu</button>
+    <div class="panel">
+      <ul class="navbar-items">
+        <li class="nav-item"><a href="/about/index.html">About</a></li>
+        <li class="nav-item"><a href="mailto:mtfullertondesign@gmail.com">Contact</a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/mac-fullerton/" target="blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+var acc = document.getElementsByClassName("nav-menu");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
