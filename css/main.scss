@@ -56,6 +56,7 @@ a {
   margin: 1rem 2rem 0 2rem;
   width: auto;
   align-items:center;
+  justify-content: space-evenly;
   @media (min-width: 900px) {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -74,15 +75,15 @@ a {
 
 .navbar-title {
   flex-direction: column;
-  text-align: center;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
   padding: 1.5rem 0;
   border-top: 1px solid $lightgrey;
   border-bottom: 1px solid $lightgrey;
-  width: 100%;
+  width: auto;
   color: $maincolor;
   letter-spacing: .08rem;
   &:hover,&:focus {
@@ -92,6 +93,10 @@ a {
     border-top: none;
     text-align: none;
     border-bottom: none;
+    margin-left: 1.5rem;
+  }
+  @media (min-width: 1600px) {
+    font-size: 3.5rem;
   }
 }
 
@@ -101,6 +106,9 @@ a {
   font-weight: 400;
   color: $highlightcolor;
   justify-content: center;
+    @media (min-width: 1600px) {
+    font-size: 1.72rem;
+  }
 }
 
 .nav-menu {
@@ -115,6 +123,7 @@ a {
   font-size: 18px;
   text-transform: uppercase;
   transition: 0.4s;
+  background-color: transparent;
   @media (min-width: 900px){
     display:none;
   }
@@ -286,14 +295,14 @@ a {
 button.view_pdf {
   border: none;
   border-radius: .5rem;
-  background-color: none;
+  background-color: transparent;
   color: $highlightcolor;
   width: 60%;
   padding: .5rem;
   font-size: .8rem;
   text-align: left;
   &:hover, &:focus {
-    background-color: none;
+    background-color: transparent;
     color: $maincolor;
   }
   @media (min-width: 800px) {
@@ -388,10 +397,33 @@ img.threesbs {
   align-items: center;
   justify-content: space-between;
   margin: 2rem 1rem;
+  font-weight: 600;
 }
 
-h5.backhome {
+.prevnext {
+  display: flex;
+  flex-direction: row;
+}
+
+.prev {
+    &:hover, &:focus {
+    color: $highlightcolor;
+  }
+}
+
+.next {
+    &:hover, &:focus {
+    color: $highlightcolor;
+  }
+}
+
+p.backhome {
   display:flex;
+  color: $maincolor;
+  font-weight: 600;
+  &:hover, &:focus {
+    color: $highlightcolor;
+  }
 }
 
 #toppage {
@@ -401,6 +433,10 @@ h5.backhome {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  background-color: transparent;
+  &:hover, &:focus {
+    color: $highlightcolor;
+  }
 }
 
 
