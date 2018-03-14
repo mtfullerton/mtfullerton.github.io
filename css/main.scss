@@ -171,6 +171,9 @@ a {
   &:hover, &:focus {
     color: $highlightcolor;
   }
+    @media (min-width: 1600px) {
+    font-size: 1.5rem;
+  }
 }
 
 .deck {
