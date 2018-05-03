@@ -93,6 +93,12 @@ a {
     text-align: none;
     border-bottom: none;
   }
+    @media (min-width: 1600px) {
+    border-top: none;
+    text-align: left;
+    border-bottom: none;
+    margin-left: 5rem;
+  }
 }
 
 .navbar-subtitle {
@@ -404,6 +410,7 @@ h5.backhome {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 
