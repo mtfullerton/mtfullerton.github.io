@@ -454,6 +454,10 @@ video {
   @media (min-width: 800px) {
     width: 70%;
   }
+  @media (min-width: 1200px) {
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+  }
 }
 
 ///Video Gallery
@@ -503,6 +507,10 @@ video {
   color: $darkgrey;
   font-size: 1.10rem;
   line-height: 1.75rem;
+  @media (min-width: 1200px) {
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+  }
 }
 
 .video-type {
@@ -562,6 +570,9 @@ button.view_pdf {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
+  @media (min-width: 1200px) {
+      max-width: 1600px;
+  }
 }
 
 .image-container {
@@ -612,6 +623,10 @@ p.image-caption {
   font-size: .85rem;
   @media (min-width: 800px) {
     font-size: 1rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 1.15rem;
+    line-height: 1.75rem;
   }
 }
 
