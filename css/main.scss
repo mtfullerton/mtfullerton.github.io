@@ -568,11 +568,8 @@ button.view_pdf {
 .image-gallery {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
-  @media (min-width: 1200px) {
-      max-width: 1600px;
-  }
 }
 
 .image-container {
@@ -707,6 +704,7 @@ ul.work-nav {
   outline: none;
   color: $lightgrey;
   cursor: pointer;
+  background: none;
   padding: 15px;
   border-radius: 4px;
   margin: auto, 0;
