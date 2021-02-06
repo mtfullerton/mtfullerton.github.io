@@ -570,9 +570,23 @@ button.view_pdf {
 
 .image-gallery {
   display: flex;
-  flex-direction: column;
-  max-width: 1600px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
+}
+
+
+.gallery-img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin: 15px;
+  &:hover {
+    transform:scale(1.02);
+    transition: .05s;
+  }
 }
 
 .image-container {
