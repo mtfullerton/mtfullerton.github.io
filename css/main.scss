@@ -320,6 +320,33 @@ video {
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
+  box-shadow: 0px 0px 5px $lightgrey;
+  cursor: pointer;
+    @media (min-width: 800px) {
+      width: 425px;
+      height: 250px;
+  }
+  &:hover, &:focus{
+    .card-background {
+      opacity: .98;
+      box-shadow: 0 0 20px $lightgrey;
+    }
+    .card-2-title {
+      opacity: .98;
+    }
+}
+}
+
+.card-video {
+  width: 350px;
+  height: 210px;
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  box-shadow: 0 0 20px $lightgrey;
   cursor: pointer;
     @media (min-width: 800px) {
       width: 425px;
@@ -374,7 +401,7 @@ video {
   text-transform: uppercase;
   font-size: 1.75rem;
   font-weight: 800;
-  letter-spacing: .12rem;
+  letter-spacing: .15rem;
   line-height: 2rem;
   text-align: center;
   margin: 3rem;
