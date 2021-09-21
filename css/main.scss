@@ -9,17 +9,26 @@
 // Fonts
 @import "https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900";
 @import "https://fonts.googleapis.com/css?family=Chivo:300,400,400i,700,700i";
+@import "https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700,700i";
 
 $muli: 'Muli';
 $chivo: 'Chivo',sans-serif;
+$nunito: 'Nunito';
 
 $highlightcolor:#00A99D;
 $maincolor:#30A369;
 $lightgrey:#bdc3c7;
-$darkgrey:#636e72;
+$darkgrey:#333;
+
+$meeplegreen:#208D74;
 
 body {
   font-family: $muli;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 a {
@@ -38,6 +47,13 @@ a {
 video {
   width: 100%;
   height: auto;
+}
+
+.spacer {
+  height: 5vh;
+  @media (min-width: 800px) {
+    height: 10vh;
+  }
 }
 
 .main-container {
@@ -77,13 +93,11 @@ video {
   align-items: center;
   justify-content: space-between;
   @media (min-width: 900px) {
-    flex-direction: row;
   }
   @media (min-width: 1000px) {
-
   }
   @media (min-width: 1200px) {
-
+    flex-direction: row;
   }
 }
 
@@ -171,6 +185,7 @@ video {
   font-weight: 600;
   font-size: 18px;
   transition: 0.4s;
+  background-color: #fff;
   &:focus, &:active{
 
     }
@@ -210,7 +225,7 @@ video {
 }
 
 .nav-item {
-  margin: .5rem 2rem;
+  margin: 1rem 2rem;
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -297,6 +312,77 @@ video {
 //   }
 // }
 
+//Columns
+
+.two-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.two-column_background {
+  display: flex;
+  flex-direction: row;
+  background-color: #f7f7f7;
+  color: #2c3e50;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  @media (min-width: 800px) {
+    padding: 2rem 1.5rem;
+  }
+  @media (min-width: 1000px) {
+    padding: 2rem 8rem;
+  }
+  @media (min-width: 1200px) {
+    padding: 2rem 8rem;
+  }
+}
+
+.column-content-r {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.column-content-l {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-right: 30px;
+}
+
+.column-ctr-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+#column-objective {
+  margin: 2rem 2rem;
+  @media (min-width: 800px) {
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+}
+
+.column-statement {
+  color: #fff !important;
+  background-color: inherit;
+  padding: 40px;
+  @media (min-width: 1200px) {
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 75px;
+    border-radius: 0 30px 30px 0;
+  }
+}
 
 //Deck and Cards
 
@@ -320,7 +406,12 @@ video {
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
-  box-shadow: 0px 0px 5px $lightgrey;
+  box-shadow:
+    0 4.5px 3.6px rgba(0, 0, 0, 0.017),
+    0 12.4px 10px rgba(0, 0, 0, 0.025),
+    0 29.8px 24.1px rgba(0, 0, 0, 0.033),
+    0 99px 80px rgba(0, 0, 0, 0.05)
+  ;
   cursor: pointer;
     @media (min-width: 800px) {
       width: 425px;
@@ -411,6 +502,10 @@ video {
     @media (min-width: 800px) {
       font-size: 2rem;
   }
+  small {
+    font-size: 1rem;
+    line-height: 10px;
+  }
 }
 
 //Job
@@ -431,7 +526,7 @@ video {
 }
 
 .job-title {
-  font-weight: 900;
+  font-weight: 800;
   font-size: 2.5rem;
   color: $maincolor;
   margin: 0 0 .7rem 0;
@@ -453,7 +548,7 @@ video {
 .year {
   font-size: 4rem;
   margin: 0;
-  opacity: .2;
+  opacity: .4;
   font-weight: 900;
   background: -webkit-linear-gradient(180deg, #00A99D, #30A369);
   -webkit-background-clip: text;
@@ -474,19 +569,19 @@ video {
 }
 
 .job-description {
-  font-family: $chivo;
+  font-family: $muli;
   color: $darkgrey;
   font-weight: 400;
-  font-size: 1.10rem;
-  line-height: 1.8rem;
+  font-size: 16px;
+  line-height: 32px;
   margin: .75rem 0;
   width: 100%;
   @media (min-width: 800px) {
     width: 70%;
   }
   @media (min-width: 1200px) {
-    font-size: 1.15rem;
-    line-height: 1.75rem;
+    font-size: 18px;
+    line-height: 36px;
   }
 }
 
@@ -533,12 +628,12 @@ video {
 }
 
 .video-description {
-  font-family: $chivo;
+  font-family: $muli;
   color: $darkgrey;
-  font-size: 1.10rem;
+  font-size: 16px;
   line-height: 1.75rem;
   @media (min-width: 1200px) {
-    font-size: 1.15rem;
+    font-size: 18px;
     line-height: 1.75rem;
   }
 }
@@ -616,6 +711,26 @@ button.view_pdf {
   }
 }
 
+.gallery-img-lg {
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+  margin: 15px;
+  &:hover {
+    transform:scale(1.02);
+    transition: .05s;
+  }
+}
+
+.standard-img {
+  width: 80%;
+  height: auto;
+  &:hover {
+    transform:scale(1.02);
+    transition: .05s;
+  }
+}
+
 .image-container {
   display: flex;
   flex-direction: column;
@@ -664,17 +779,13 @@ p.image-caption {
   justify-content: flex-start;
   text-align: left;
   color: $darkgrey;
-  font-family: $chivo;
+  font-family: $muli;
   margin-top: 0;
   line-height: 1.5rem;
   margin-bottom: .5rem;
   font-size: .85rem;
   @media (min-width: 800px) {
     font-size: 1rem;
-  }
-  @media (min-width: 1200px) {
-    font-size: 1.15rem;
-    line-height: 1.75rem;
   }
 }
 
@@ -688,7 +799,7 @@ img.tall {
 img.wide {
   margin: 1rem 0;
   display: flex;
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -808,7 +919,8 @@ ul.work-nav {
 
 .about_bio {
   font-size: 1rem;
-  font-family: $chivo;
+  font-weight: 400;
+  font-family: $muli;
   margin-top: 2rem;
   @media (min-width: 800px) {
     font-size: 1rem;
@@ -850,12 +962,11 @@ ul.work-nav {
 
 .about_text {
   margin-top: 0;
-  font-family: $chivo;
-  line-height: 1.5rem;
+  font-family: $muli;
+  line-height: 36px;
   color: $darkgrey;
   font-weight: 400;
   font-size: 1.10rem;
-  line-height: 1.8rem;
   margin: 0;
   padding: 0;
 }
@@ -971,6 +1082,7 @@ ul.work-nav {
   height: $carousel-control-icon-width;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
+  filter: invert(100%);
 }
 .carousel-control-prev-icon {
   background-image: $carousel-control-prev-icon-bg;
@@ -1048,10 +1160,274 @@ ul.work-nav {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: $carousel-caption-color;
+  color: black;
   text-align: center;
 }
 
+
+//Case Study
+
+.casestudy-intro {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.casestudy-section {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 800px) {
+    margin: 2rem 1.5rem;
+  }
+  @media (min-width: 1000px) {
+    margin: 2rem 8rem;
+  }
+  @media (min-width: 1200px) {
+    margin: 2rem 8rem;
+  }
+}
+
+.casestudy-heading {
+  font-size: 30px;
+  margin: 5px 0;
+  font-family: $nunito;
+  font-weight: 900;
+}
+
+.casestudy-darkheading {
+  font-size: 30px;
+  color: #fff;
+  margin: 5px 0;
+  font-family: $nunito;
+  font-weight: 900;
+}
+
+.casestudy-subheading {
+  font-size: 21px;
+  color: $darkgrey;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  font-family: $nunito;
+  font-weight: 500;
+}
+
+.casestudy-description {
+  font-family: $muli;
+  color: $darkgrey;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  margin: .75rem 0;
+  width: auto;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 36px;
+    width: 100%;
+  }
+}
+
+.casestudy-description-white {
+  font-family: $muli;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  margin: .75rem 0;
+  width: 100%;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+.casestudy-quote {
+  font-family: $muli;
+  color: inherit;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  small {
+    font-weight: 500;
+    font-size: 21px;
+    color: $darkgrey;
+  }
+}
+
+.casestudy-list {
+  font-family: $muli;
+  color: $darkgrey;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 0;
+  width: 100%;
+  list-style: disc;
+  padding-left: 15px;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 36px;
+    width: 90%;
+  }
+  li {
+    margin: 5px 0;
+  }
+}
+
+.casestudy-button {
+  background-color: inherit;
+  margin: 20px 0;
+  padding: 20px 30px;
+  font-family: $muli;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  transition: .2s;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.tabletop-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  @media (min-width: 800px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 5rem;
+  }
+}
+
+.savr-heading {
+  color: $darkgrey;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#tabletop-color {
+  color: #218c74;
+}
+
+#tabletop-background {
+  background-color: #218c74;
+}
+
+#savr-color {
+  color: #d35400;
+}
+
+#savr-background {
+  background-color: #d35400;
+}
+
+#subtrack-color {
+  color: #0d1f2d;
+}
+
+#subtrack-background {
+  background-color: #0d1f2d;
+}
+
+.ux-intro {
+  font-family: $nunito;
+  font-size: 18px;
+  color: $darkgrey;
+  margin: 0 2rem;
+  @media (min-width: 800px) {
+    margin: 0;
+  }
+}
+
+.highlighted-statement {
+  background-color: inherit;
+  padding: 2rem 2rem;
+  @media (min-width: 800px) {
+    padding: 2rem 1.5rem;
+  }
+  @media (min-width: 1000px) {
+    padding: 2rem 8rem;
+  }
+  @media (min-width: 1200px) {
+    padding: 2rem 8rem;
+  }
+}
+
+
+#tabletop-logo {
+  width: 100%;
+  height: auto;
+  @media (min-width: 800px) {
+    width: 500px;
+  }
+}
+
+#tabletop-mockup {
+  background-image: url("/images/tabletopdetective/tabletop-appmockup.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  margin: 2rem 0;
+  @media (min-width: 800px) {
+    height: 600px;
+    margin: 0;
+  }
+  @media (min-width: 1200px) {
+    height: 900px;
+  }
+}
+
+#savr-mockup {
+  background-image: url("/images/savr/savr-header.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  margin: 2rem 0;
+  @media (min-width: 800px) {
+    height: 600px;
+    margin: 0;
+  }
+  @media (min-width: 1200px) {
+    height: 700px;
+  }
+}
+
+#subtrack-mockup {
+  background-image: url("/images/subtrack/subtrack-header.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  margin: 2rem 0;
+  @media (min-width: 800px) {
+    height: 600px;
+    margin: 0;
+  }
+  @media (min-width: 1200px) {
+    height: 700px;
+  }
+}
+
+#tabletop-onboarding {
+  width: 500px;
+  height: auto;
+}
 
 //Footer
 
