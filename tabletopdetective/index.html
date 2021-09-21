@@ -1,0 +1,365 @@
+---
+layout: default
+---
+<div class="main-container">
+  <div class="tabletop-header">
+    <div class=ux-intro>
+      <img id="tabletop-logo" src="/images/tabletopdetective/TabletopDetective---Logo.png">
+      <h5 class="casestudy-heading" id="tabletop-color">Helping Tabletop Players Find Games</h5>
+      <p class="casestudy-description"><strong>Duration:</strong> April 2021–July 2021</p>
+      <p class="casestudy-description"><strong>Role:</strong> UX/UI Researcher and Designer</p>
+      <p class="casestudy-description"><strong>Key Skills:</strong> Interviews, Personas, User Stories, Sitemaps, User Flows, Wireframing, Prototyping, User Testing, Visual Design</p>
+    </div>
+    <div id="tabletop-mockup"></div>
+  </div>
+  <div class="casestudy-intro">
+    <div class="column-statement" id="tabletop-background">
+      <h4 class="casestudy-darkheading">Problem Statement</h4>
+      <p class="casestudy-description-white">There are over 3,000 new tabletop games being released yearly making it hard for people to find board games that fit their interests.</p>
+    </div>
+    <div id="column-objective">
+      <h4 class="casestudy-heading" id="tabletop-color">The Objective</h4>
+      <p class="casestudy-description">As a tabletop player who has given personal recommendations to others, I wanted to find a way to guide people to board games that fit their playstyle. Over three months I built a solution using the five-step
+        design methodology, empathize, define, ideate, prototype, and test. This solution, Tabletop Detective, is designed to help users easily find tabletop games that fit their playstyles and places to try or buy them.</p>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="casestudy-section">
+    <h4 class="casestudy-heading" id="tabletop-color">Learning from potential users</h4>
+    <h6 class="casestudy-subheading">User Interviews</h6>
+    <p class="casestudy-description">Beginning with some background and user research I was able to interview five potential users of this app. Participants were asked about their previous experience buying tabletop games, any current tools they use
+      to assist, familiarity with board game cafes and stores, and features they look for in an app. I was able to synthesize this research into a few main categories using an affinity map.</p>
+    <div id="carousel-userstories" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-userstories" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-userstories" data-slide-to="1"></li>
+        <li data-target="#carousel-userstories" data-slide-to="2"></li>
+        <li data-target="#carousel-userstories" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop_usernotes-01.png" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>User Notes</strong></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop_usernotes-02.png" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>User Notes</strong></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop_usernotes-03.png" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>User Notes</strong></p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-userstories" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-userstories" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <p class="casestudy-description">Hearing from potential users helped to reinforce my initial thinking, there was no single source for users to get board game recommendations. Multiple interviewees said they read Amazon reviews but struggled to
+      decide if the game was a right fit. Each user had specific qualifiers they were searching for including mechanics, themes, age range, number of players, and more. In one circumstance a user bought a game that they thought they’d like only to
+      feel like they wasted $50+ on a game they’d never play.</p>
+    <h5 class="casestudy-quote" id="tabletop-color">“I want to be a board game family, but I don’t want to invest the money in a game and then figure out we don’t like it.”<br><small>Kayla Gaudette, 34</small></h5>
+    <p class="casestudy-description">Hearing a user’s personal struggle helped me to empathize with my user base and better understand their motivations.</p>
+    <p class="casestudy-description">A few of my users had been to board game stores before and mentioned it was helpful to work with a store manager. In the best cases, a game could be played before purchasing to make sure they liked it. Users who
+      hadn’t expressed interest in finding nearby locations and said they weren’t aware of places nearby. </p>
+  </div>
+  <div class="casestudy-section">
+    <div class="two-column">
+      <div class="column-content">
+        <p class="casestudy-description">At the end of my preliminary research, I had three main issues I planned to address with my app.</p>
+        <p class="casestudy-description"><strong>Find Games</strong><br>How do we help users find board games that fit their playstyle?</p>
+        <p class="casestudy-description"><strong>Find Locations</strong><br>How can we help users find nearby locations to try games for the first time or buy them?</p>
+        <p class="casestudy-description"><strong>Rate and Review</strong><br>How can we allow users to rate and review games they already own and see reviews from others?</p>
+      </div>
+      <div class="image-container">
+        <img id="tabletop-onboarding" src="/images/tabletopdetective/Tabletop-Detective-FindGames.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="casestudy-section">
+    <h6 class="casestudy-subheading">Personas</h6>
+    <p class="casestudy-description">I also constructed two personas based on the insights from the research.</p>
+    <div class="two-column">
+      <div class="column-ctr-content">
+        <div class="image-container">
+          <a href="/images/tabletopdetective/tabletoppersonas_family.jpg" data-title="Family-Focused Fiona Persona" data-lightbox="portfolio"><img class="wide" src="/images/tabletopdetective/tabletoppersonas_family.jpg"></a>
+        </div>
+        <p class="caption-title">Family-Focused Fiona</p>
+        <p class="image-caption">Wants to find games that the entire family can play together</p>
+      </div>
+      <div class="column-ctr-content">
+        <div class="image-container">
+          <a href="/images/tabletopdetective/tabletoppersonas_friends.jpg" data-title="Hobbyist Hank Persona" data-lightbox="portfolio"><img class="wide" src="/images/tabletopdetective/tabletoppersonas_friends.jpg"></a>
+        </div>
+        <p class="caption-title">Hobbyist Hank</p>
+        <p class="image-caption">Wants to try new tabletop games similar to what he’s already playing</p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="casestudy-section">
+    <div class="two-column">
+      <div class="column-content">
+        <h4 class="casestudy-heading" id="tabletop-color">Mapping out user flows to address the app’s main features</h4>
+        <h6 class="casestudy-subheading">User Stories</h6>
+        <p class="casestudy-description">From these three questions and my personas, I was able to put myself in the shoes of my users to understand the tasks they’d need to achieve. I built user stories to build my foundation as I started to build
+          out the app’s architecture.</p>
+        <p class="casestudy-description">Three of my user stories addressed social features, these would have to be placed on the back-burner in order to address the Minimal Viable Product. With this decided I was able to build a site map.</p>
+      </div>
+      <div class="column-content">
+        <div class="image-container">
+          <a href="/images/tabletopdetective/tabletop_userstudies.png" data-title="User Stories" data-lightbox="portfolio"><img class="wide" src="/images/tabletopdetective/tabletop_userstudies.png"></a>
+        </div>
+      </div>
+    </div>
+    <h6 class="casestudy-subheading">Site Map</h6>
+    <div class="image-container">
+      <a href="/images/tabletopdetective/tabletop_sitemap.jpg" data-title="Site Map" data-lightbox="portfolio"><img class="wide" src="/images/tabletopdetective/tabletop_sitemap.jpg"></a>
+    </div>
+    <div class="spacer"></div>
+    <h6 class="casestudy-subheading">User Flows</h6>
+    <div id="carousel-userflows" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-userflows" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-userflows" data-slide-to="1"></li>
+        <li data-target="#carousel-userflows" data-slide-to="2"></li>
+        <li data-target="#carousel-userflows" data-slide-to="3"></li>
+        <li data-target="#carousel-userflows" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop-userflow-1.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>User Notes</strong></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop-userflow-2.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>User Notes</strong></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop-userflow-3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>User Notes</strong></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop-userflow-4.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>User Notes</strong></p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-userflows" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-userflows" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="casestudy-section">
+    <h4 class="casestudy-heading" id="tabletop-color">Sketching and prototyping from user research</h4>
+    <p class="casestudy-description">Based on these flows I created a sketched prototype that I could test with users to make sure the app’s red routes could be navigated without issue. </p>
+    <div class="image-container">
+      <a href="/images/tabletopdetective/tabletop_sketches.jpg" data-title="Sketches" data-lightbox="portfolio"><img class="wide" src="/images/tabletopdetective/tabletop_sketches.jpg"></a>
+    </div>
+    <p class="casestudy-description">The results of my testing were positive with each user able to complete the tasks of finding a game, reviewing a game, and finding a location. I was also able to get valuable feedback which would be helpful during
+      wireframing.</p>
+  </div>
+  <div class="spacer"></div>
+  <div class="casestudy-section">
+    <h4 class="casestudy-heading" id="tabletop-color">Updating the prototype based on insights from user testing</h4>
+    <div class="two-column">
+      <div class="column-content-l">
+        <h6 class="casestudy-subheading">Search</h6>
+        <p class="casestudy-description"><strong>Feedback and Insights</strong></p>
+        <ul class=casestudy-list>
+          <li>The search function was used immediately by all users when asked to find a game</li>
+          <li>The user’s expectation was that the search bar would be able to search not only games but also locations and other profiles</li>
+        </ul>
+        <p class="casestudy-description"><strong>Iteration and Redesign</strong></p>
+        <ul class=casestudy-list>
+          <li>I designed a toggle to switch between Games, Locations, and Profiles when searching. This would prevent the user from getting results from things they weren’t looking for and easily categorize the search</li>
+          <li>The search bar was also made available on most pages for easy access</li>
+          <li>In the real world, I would prioritize the search feature to a development team</li>
+        </ul>
+      </div>
+      <div class="column-content-r">
+        <div class="image-container">
+          <a href="/images/tabletopdetective/tabletop-search.jpg" data-title="Search Page Redesign" data-lightbox="portfolio"><img class="wide" title="Search Page Redesign" src="/images/tabletopdetective/tabletop-search.jpg"></a>
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="two-column">
+      <div class="column-content-l">
+        <h6 class="casestudy-subheading">Home Page</h6>
+        <p class="casestudy-description"><strong>Feedback and Insights</strong></p>
+        <ul class=casestudy-list>
+          <li>Users wanted a more personalized home-page</li>
+          <li>Users said the locations feature wasn’t prominent enough</li>
+          <li>The Home page and Games page design was too similar</li>
+        </ul>
+        <p class="casestudy-description"><strong>Iteration and Redesign</strong></p>
+        <ul class=casestudy-list>
+          <li>Added user name to the homepage for personalization</li>
+          <li>Added a locations section to the homepage to highlight the feature, this would later be a personalized nearby locations section</li>
+          <li>Changed the categories on the game page, did a major redesign of the game page in the high-fidelity mockups</li>
+        </ul>
+      </div>
+      <div class="column-content-r">
+        <div class="image-container">
+          <a href="/images/tabletopdetective/tabletop-welcome.jpg" data-lightbox="portfolio" data-title="Welcome Page Redesign"><img class="wide" src="/images/tabletopdetective/tabletop-welcome.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="casestudy-section">
+    <h6 class="casestudy-subheading">Wireframes</h6>
+    <p class="casestudy-description">With all these insights I build wireframes of the app in Adobe XD. I sped up the process by utilizing some wireframe kits. I set up wire flows to make sure all parts of my red routes were planned for.</p>
+    <div id="carousel-wireflows" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-wireflows" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-wireflows" data-slide-to="1"></li>
+        <li data-target="#carousel-wireflows" data-slide-to="2"></li>
+        <li data-target="#carousel-wireflows" data-slide-to="3"></li>
+        <li data-target="#carousel-wireflows" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop-wireflows-01.jpg" alt="Sign In/Sign Up Red Route">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>Sign In/Sign Up Red Route | User Flow</strong></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop-wireflows-02.jpg" alt="Game Page Red Route">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>Game Page Red Route | User Flow</strong></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop-wireflows-03.jpg" alt="Game Review Red Route">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>Game Review Red Route | User Flow</strong></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/tabletopdetective/tabletop-wireflows-04.jpg" alt="Location Red Route">
+          <div class="carousel-caption d-none d-md-block">
+            <p><strong>Location Red Route | User Flow</strong></p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-wireflows" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-wireflows" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="two-column">
+      <div class="column-content-l">
+        <h6 class="casestudy-subheading">Style Guide</h6>
+        <p class="casestudy-description">Before starting on my high-fidelity prototypes I took time to build a style guide for the app. The style priorities were:</p>
+        <ul class=casestudy-list>
+          <li>A primary focus is the games and information, reduce distracting elements</li>
+          <li>Fun feeling, match the attitude of tabletop games</li>
+          <li>Contemporary and effortless design</li>
+        </ul>
+        <p class="casestudy-description">Based on these priorities I developed the style guide below.</p>
+        <ul class=casestudy-list>
+          <li>The background color of the app would be white and light gray for easy reading</li>
+          <li>Bright green, blue, and yellow colors were used for accents to highlight important elements and bring a feeling of fun</li>
+          <li>Both fonts were selected for their readability, Nunito letterforms were rounded which added a sense of leisure</li>
+          <li>Graphic imagery was also developed for the onboarding screens. All other imagery besides the icons would be pulled from games or locations</li>
+        </ul>
+      </div>
+      <div class="column-content-r">
+        <div class="image-container">
+          <a href="/images/tabletopdetective/tabletop_styleguide-colors.jpg" data-title="Style Guide | Colors" data-lightbox="portfolio"><img class="wide" src="/images/tabletopdetective/tabletop_styleguide-colors.jpg"></a>
+        </div>
+        <a href="/images/tabletopdetective/tabletop_styleguide.pdf"><button class="casestudy-button">View the Full Style Guide</button></a>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <h4 class="casestudy-heading" id="tabletop-color">Developing high fidelity prototypes and testing with potential users</h4>
+    <div class="image-container">
+      <a href="/images/tabletopdetective/tabletop_highfidelity.png" data-title="High-Fidelity Prototype" data-lightbox="portfolio"><img class="wide" src="/images/tabletopdetective/tabletop_highfidelity.png"></a>
+    </div>
+    <div class="two-column">
+      <div class="column-content-l">
+        <p class="casestudy-description">When translating my wireframes to high fidelity I made changes to the structure of multiple pages to keep a consistent look across the app. I originally set up a tab system on the search page based on a
+          wireframe kit. However, I found the system fit on multiple pages and would reduce vertical scrolling to access certain categories. This also made the design of the home page and game page more distinct. I built a tray system to add a sense
+          of depth to the design and to keep the placement of elements consistent.</p>
+        <p class="casestudy-description">The tray system also helped when developing micro-animations. Sliding trays in and out built upon the sense of depth in the design. I also created a small animation when swapping between tabs. The animation is
+          fluid and quick with a small snap to it which brings a fun and exciting energy.</p>
+        <p class="casestudy-description">After creating high-fidelity prototypes I did in-person usability tests with five new users. I asked them to complete similar tasks as my initial testing while also asking questions about the app’s look and
+          feel. I was excited that the overall impressions of the design were positive.</p>
+        <a href="https://macfullerton47117.invisionapp.com/overview/Tabletop-Detective-ckq59m21u1nqx01bvadrb5ge5/screens?sortBy=1&sortOrder=1&viewLayout=2"><button class="casestudy-button">View the Full Prototype</button></a>
+      </div>
+      <div class="column-content-r">
+        <iframe style="border:0px;" src="/images/tabletopdetective/Tabletop Detective - Animations.mp4" width="400" height="600"> </iframe>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="casestudy-section">
+    <div class="two-column">
+      <div class="column-content">
+        <h4 class="casestudy-heading" id="tabletop-color">Updates to the high fidelity prototypes</h4>
+        <p class="casestudy-description"><strong>Feedback and Insights</strong></p>
+        <ul class="casestudy-list">
+          <li>Almost all the participants were confused by the progress circles on the review screens, some testers tried to click on them while others just questioned the purpose</li>
+          <li>Three participants wanted extra options in the review, including an option for superlatives and what the star rating means</li>
+          <li>Users liked the quickness of the review process and appreciated options to skip sections</li>
+          <li>Locations on the homepage don’t include icons for Cafe or Store</li>
+        </ul>
+        <p class="casestudy-description"><strong>Feedback and Insights</strong></p>
+        <ul class="casestudy-list">
+          <li>Progress circles were removed completely to prevent confusion</li>
+          <li>A description was provided for each star rating</li>
+          <li>Superlatives section was added to the second screen of the review process allowing users to add tags to the review as an option</li>
+          <li>The overall structure of the review screens was updated to give content more room</li>
+          <li>A statement was added to the third screen of the review reminded the user of their score to help give context to their written review</li>
+          <li>All locations were given icons</li>
+        </ul>
+      </div>
+      <div class="column-content">
+        <div class="image-container">
+          <a href="/images/tabletopdetective/tabletop_reviewupdate.jpg" data-title="Updates to Review Process" data-lightbox="portfolio"><img class="wide" src="/images/tabletopdetective/tabletop_reviewupdate.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="casestudy-section">
+    <h4 class="casestudy-heading" id="tabletop-color">Reflections and Next Steps</h4>
+    <p class="casestudy-description">As the first capstone project for my UX/UI course, I can safely say it was a learning experience. In my current role as a designer, I don’t get to talk or learn about my end users. Taking time to do user
+      interviews and testing helped to open my eyes to their struggles and in many cases, it was just fun to discuss and learn about their experiences.</p>
+    <p class="casestudy-description">There were a few times in the process where I ran into a drawback. When creating my style guide I initially used a bright orange for headings and buttons but it had a low accessibility score. This reinforced the
+      importance of checking my brand style with accessibility guidelines early and keeping it at forefront of any updates to the app. When planning for my animations I realized I hadn’t done a good job of grouping, organizing, and naming my layers.
+      This caused me to take extra time to do so. I’m confident that my next project will be much better managed.</p>
+    <p class="casestudy-description">Going forward, I would plan on expanding the social features of the app. These weren’t part of the MVP but would include an expansion of the profile page, a section to show off a user’s favorite games, and an
+      option to create lists. Another idea from the research interviews was an option to find local people to group up with to play games together. All of these would be great features to add that fit within the app and user’s goals.</p>
+  </div>
+</div>

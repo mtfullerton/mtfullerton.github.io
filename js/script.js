@@ -18,6 +18,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-$(function() {
-  $('.carousel').carousel();
-});
+// $(function() {
+//   $('.carousel').carousel();
+// });
