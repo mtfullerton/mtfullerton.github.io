@@ -1311,6 +1311,23 @@ ul.work-nav {
   }
 }
 
+.ecostylist-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 3rem 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  @media (min-width: 800px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5rem;
+  }
+}
+
 .savr-heading {
   color: $darkgrey;
   font-size: 40px;
@@ -1341,6 +1358,14 @@ ul.work-nav {
   background-color: #0d1f2d;
 }
 
+#ecostylist-color {
+  color: #7ea16b;
+}
+
+#ecostylist-background {
+  background-color: #7ea16b;
+}
+
 .ux-intro {
   font-family: $nunito;
   font-size: 18px;
@@ -1348,6 +1373,18 @@ ul.work-nav {
   margin: 0 2rem;
   @media (min-width: 800px) {
     margin: 0;
+  }
+}
+
+.ux-intro-ecostylist {
+  font-family: $nunito;
+  font-size: 18px;
+  color: $darkgrey;
+  margin: 0 2rem;
+  width: auto;
+  @media (min-width: 800px) {
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -1371,6 +1408,14 @@ ul.work-nav {
   height: auto;
   @media (min-width: 800px) {
     width: 500px;
+  }
+}
+
+#ecostylist-logo {
+  width: 80%;
+  height: auto;
+  @media (min-width: 800px) {
+    width: 400px;
   }
 }
 
@@ -1417,6 +1462,24 @@ ul.work-nav {
   width: 100%;
   margin: 2rem 0;
   @media (min-width: 800px) {
+    height: 600px;
+    margin: 0;
+  }
+  @media (min-width: 1200px) {
+    height: 700px;
+  }
+}
+
+#ecostylist-mockup {
+  background-image: url("/images/ecostylist/ecostylist-header.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  @media (min-width: 800px) {
+    background-position: left;
+    background-size: cover;
     height: 600px;
     margin: 0;
   }
